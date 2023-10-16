@@ -1,0 +1,158 @@
+body {
+    font-size: 15px;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--main-color);
+    border-radius: 30px;
+    max-width: 410px;
+    padding: 34px;
+    margin: 0 15px;
+}
+
+.container .title {
+    color: #fff;
+    font-size: 28.4px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.container .paragraph {
+    color: var(--paragraph-color);
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.container .rating-state .star,
+.container .rating-state .option {
+    background-color: var(--button-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.container .rating-state .star {
+    margin-bottom: 26px;
+}
+
+.container .rating-state .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.container .rating-state .buttons .option {
+    color: var(--paragraph-color);
+    font-size: 17px;
+    font-weight: 500;
+    width: 50px;
+    height: 50px;
+}
+
+.container .rating-state .buttons .option:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .rating-state .buttons .option.active {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.container .rating-state #submit-btn {
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.container .rating-state #submit-btn:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container .thank-you-state {
+    text-align: center;
+}
+
+.container .thank-you-state .illustration {
+    margin: 10px 0 26px;
+}
+
+.container .thank-you-state .rated {
+    font-weight: 400;
+    color: var(--primary-color);
+    background-color: var(--button-color);
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 16px;
+    margin-bottom: 33px;
+}
+
+.container .thank-you-state .paragraph {
+    margin-bottom: 16px;
+}
+
+.fade {
+    display: none;
+}
+
+@media(max-width: 392px) {
+    .container {
+        border-radius: 15px;
+        max-width: 345px;
+    }
+
+    .container .title {
+        font-size: 24px;
+    }
+
+    .container .paragraph {
+        font-size: 14px;
+        line-height: 22.5px;
+    }
+
+    .container .rating-state .star,
+    .container .rating-state .option {
+        background-color: var(--button-color);
+        padding: 12px;
+        border-radius: 50%;
+    }
+
+    .container .rating-state .star {
+        width: 39px;
+        margin-bottom: 14px;
+    }
+
+    .container .rating-state .buttons {
+        margin-bottom: 28px;
+    }
+
+    .container .rating-state .buttons .option {
+        font-size: 14px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .container .thank-you-state .illustration {
+        margin: 0 0 18px;
+        width: 52%;
+    }
+
+    .container .thank-you-state .rated {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+}
